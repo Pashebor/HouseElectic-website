@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv='Content-Type' content='text/html;charset=UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=0.6'/>
+    <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+    <title></title>
+</head>
+<style>
+body{
+    background: black;
+}
+</style>
+<body>
+<script type="text/javascript">
+   /* var flag = true;
+    function winImg(){
+        setTimeout(function(){
+            $("#image").attr("src", "houses/house2.png");;
+            flag = false
+        }, 3000);
+    }
+    function nextWinImg(){
+        setTimeout(function(){
+            $("#image").attr("src", "houses/house1.png");
+        }, 6000);
+    }
+
+    /!*function showNextImage(){
+        $("#image").show();
+        $("#image").attr("src", "houses/house2.png");
+    }*!/
+
+    $(window).load(function(){
+        winImg();
+        nextWinImg();
+        alert(flag);
+        /!*showNextImage();*!/
+    });*/
+
+   function executeChanging() {
+       var images = [{
+                   url: "houses/house1.jpg", // Картинка
+                   timeout: 1000 // Задержка для картинки
+               }, {
+                   url: "houses/house2.jpg",
+                   timeout: 1000
+               },{
+                   url: "houses/house3.jpg",
+                   timeout: 1000
+               },{
+                   url: "houses/house4.jpg",
+                   timeout: 1000
+               }],
+               i = 0,
+               timeout;
+
+
+       function changeBackground() {
+           clearTimeout(timeout);
+
+           $('#image').attr('src', function() {
+               if (i >= images.length)
+                   i = 0;
+
+               timeout = setTimeout(changeBackground, images[i].timeout);
+
+               return images[i++].url ;
+           });
+
+       }
+       changeBackground();
+   };
+
+   $(document).ready(function(){
+       executeChanging();
+   });
+
+
+</script>
+<style>
+
+
+    .navicon {
+        height: 6px;
+        width: 34px;
+        margin: 20px;
+        border-top: 18px double white;
+        border-bottom: 6px solid white;
+        font-size:0;
+
+    }
+</style>
+</body>
+<img src="houses/house1.jpg"  alt="" title="" id="image">
+
+<p class="navicon"></p>
+</html>

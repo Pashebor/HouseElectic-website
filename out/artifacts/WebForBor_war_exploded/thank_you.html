@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Хаус Электрик</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1;">
+    <meta name="keywords" content="Transform Electrics, electrical, electricity, electrical products "/>
+    <meta name="description" content="Transform Electrics supply and install a wide range of Electrical products."/>
+    <meta name="msapplication-TileImage" content="house/house1">
+    <style>a,abbr,acronym,address,applet,b,big,blockquote,body,center,cite,code,dd,del,dfn,div,dl,dt,em,fieldset,font,form,h1,h2,h3,h4,h5,h6,html,i,iframe,ins,kbd,label,legend,object,p,pre,q,s,samp,small,span,strike,strong,sub,sup,tt,u,var{margin:0;padding:0;border:0;outline:0;background:0 0}img{margin:0;padding:0;outline:0}body{line-height:1}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}img{border:0}.clear{clear:both}.absolute{position:absolute}input,select,textarea{border-radius:0;border:1px solid #ccc;background:#fff;box-sizing:border-box}input,textarea{-webkit-appearance:none}</style>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/ico" href="houses/house1.png">
+    <link rel="apple-touch-icon" href="houses/house1.png">
+    <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+    <script defer src="js/fancybox.min.js"></script>
+    <script defer src="js/site.min.js"></script>
+</head>
+<body class="link15">
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700,300,100' rel='stylesheet' type='text/css'>
+
+<script>
+    $(document).ready(function(){
+
+        $('.flicker-example').flicker({
+            auto_flick: true,
+            auto_flick_delay: 5,
+            theme: 'light',
+            // flick_animation: "transform-slide"
+            // flick_animation: "transition-slide"
+            // flick_animation: "jquery-slide"
+            flick_animation: "transition-fade"
+            // flick_animation: "jquery-fade"
+        });
+    });
+</script>
+
+
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        //DROP DOWN CODE
+        $('.enquire-trigger').click(function () {
+            $('#enquire-dropdown').slideToggle(500, function () {		// CHANGE 'slow' to 'fast' if you want it faster or use a number without ' ' 1000=1sec
+                // Animation complete.
+            });
+        });
+
+
+        //CALLBACK CODE
+        $('a.fancybox-media')
+                .attr('rel', 'media-gallery')
+                .fancybox({
+                    openEffect : 'fade',
+                    closeEffect : 'fade',
+                    prevEffect : 'none',
+                    nextEffect : 'none',
+                    arrows : false,
+                    helpers : {
+                        media : {},
+                        buttons : {}
+                    }
+                });
+    });
+
+
+    // JAVASCRIPT VALIDATION MUST NOT BE FORM2
+    function validate2() {
+
+        var errors = 0;
+
+        if(document.form3.a_Name.value.length < 1) {alert('Please Enter Name');errors++;}
+        if(document.form3.b_Phone.value.length < 1) {alert('Please Enter Email');errors++;}
+        if(document.form3.c_Email.value.length < 1) {alert('Please Enter Phone');errors++;}
+
+        if(errors == 0)
+            return true;
+        else return false;
+    }
+</script>
+
+
+
+
+<div id="enquire-dropdown">
+    <div class="container">
+        <a class="enquire-trigger closeBtn" href="#"> X Close</a>
+
+
+        <!----  ONLINE ENQUIRY ------>
+        <div class="mceNonEditable"><form action="/havealook/servlet/Havealook" method="post" name="form3" onsubmit="return validate2()"><input type="hidden" name="screen" value="emailForm" /><input type="hidden" name="mailTo" value="info@transformelectrics.com.au" /><input type="hidden" name="returnTo" value="/../thank_you.html" /><input type="hidden" name="showAll" value="false" />
+            <div id="enquiry">
+                <div class="enqHeader">Online Enquiry</div>
+                <div class="enqRow">
+                    <div class="enqLeft">Name *</div>
+                    <div class="enqRight"><input type="text" name="a_Name" maxlength="250" /></div>
+                </div>
+                <div class="enqRow">
+                    <div class="enqLeft">Phone *</div>
+                    <div class="enqRight"><input type="text" name="b_Phone" maxlength="250" /></div>
+                </div>
+                <div class="enqRow">
+                    <div class="enqLeft">Email *</div>
+                    <div class="enqRight"><input type="text" name="c_Email" maxlength="250" /></div>
+                </div>
+                <div class="enqRow">
+                    <div class="enqLeft">Enquiry</div>
+                    <div class="enqRight"><textarea name="ZZ_Comments"></textarea>
+                        <div>* Required fields</div>
+                    </div>
+                </div>
+                <div class="enqRow"><input class="button" type="submit" name="email" value="Send" /></div>
+            </div>
+            <input type="hidden" name="__ncforminfo" value="guIaiuYshkjrf9UIreHgr4hEYVROhKA--KiYyrANLl_qXmT8jLSmVlA3J_RSVlyDikvC0RxmVLq1slCrHBh4tNUtyyMHg8A0Xuqa5fiDH_vxVuYklEvwSGgOHZpufjSrkXA_nPXQkMfy4VxAuDC6LAdlUoyC_6WrtqCw3Vzr7XUMMV2_etSNTkBUiNzvmUkt"/></form></div>
+        <!---- END ONLINE ENQUIRY ------>
+        <div class="dropContact">
+            <h1>Contact Us</h1>
+
+
+            <!----  CONTACT DETAILS ------>
+            <p><strong>Phone</strong></p>
+            <p>03 9399 9415 </p>
+            <p> </p>
+            <p><strong>Email</strong></p>
+            <p><a href="mailto:info@transformelectrics.com.au" target="_blank">info@transformelectrics.com.au</a></p>
+            <p> </p>
+            <p><strong>Fax</strong></p>
+            <p>03 9399 9358 </p>
+            <p> </p>
+            <p><strong>Address</strong></p>
+            <p>Factory 3/17-19 Orange Street</p>
+            <p>Williamstown North</p>
+            <p>Vic, 3016 </p>
+            <!----  CONTACT DETAILS ------>
+
+
+        </div>
+
+    </div>
+</div><div id="absoDiv1" class="absolute"></div>
+<div id="absoDiv2" class="absolute"></div>
+<div id="absoDiv3" class="absolute"></div>
+<div class="siteTop">
+    <section id="banner">
+        <div class="container">
+            <object id="logo" type="image/svg+xml" data="/../logo.svg"></object>
+
+            <div class="bannerRight">
+                <div class="contact">
+                    <p class="tagline">Contact Us Today</p>
+                    <p class="phone">03 9399 9415 </p>
+                    <a href="mailto:info@transformelectrics.com.au">info@transformelectrics.com.au</a>
+                </div>
+                <div class="ultimate">
+                    <a class="enquiry enquire-trigger"></a>
+                    <a class="fancybox-media fancybox.iframe callback" href="/files/callback.html" rel="media-gallery"></a>
+                </div>
+            </div></div>
+    </section>
+    <section id="menu">
+        <!----  MENU FOR FULL WEBSITE ------>
+        <nav>
+            <li id="link0"><a
+                    href="index.html"><span>Home </span></a></li>
+            <li id="link2" ><a
+
+                    href="about_us.html"><span>About Us</span></a></li>
+            <li id="link3" class="parent "><a class=""	href="services.html"><span>Services</span></a>
+                <ul>
+                    <div class="subContainer">
+                        <li id="sublink4" ><a href="construction.html"><span>Construction</span></a></li>
+                        <li id="sublink5" ><a href="maintenance.html"><span>Maintenance</span></a></li>
+                    </div>
+                </ul>
+            </li>
+            <li id="link6" class="parent "><a class=""	href="past.html"><span>Projects</span></a>
+                <ul>
+                    <div class="subContainer">
+                        <li id="sublink7" ><a href="past.html"><span>Past</span></a></li>
+                        <li id="sublink8" ><a href="present.html"><span>Present</span></a></li>
+                    </div>
+                </ul>
+            </li>
+            <li id="link9" ><a
+
+                    href="tenders.html"><span>Tenders</span></a></li>
+            <li id="link10" ><a
+
+                    href="partners.html"><span>Partners</span></a></li>
+            <li id="link1"><a
+                    href="contact.html"><span>Contact</span></a></li>
+        </nav>
+        <!----  END MENU FOR FULL WEBSITE ------>
+    </section>
+    <section id="mobileMenu">
+        <!----  MENU FOR MOBILE WEBSITE ------>
+        <div id="navToggle"></div>
+        <nav>
+            <li id="link0"><a href="index.html"><span>Home</span></a></li>
+            <li id="link2" >
+                <a
+                        href="about_us.html"><span>About Us</span></a>
+            </li>
+            <li id="link3"  class="parent" >
+                <span>Services</span>
+                <ul>
+                    <div class="subContainer">
+                        <li  id="sublink3"><a href="services.html"><span>Services</span></a></li>
+                        <li  id="sublink4"><a href="construction.html"><span>Construction</span></a></li>
+                        <li  id="sublink5"><a href="maintenance.html"><span>Maintenance</span></a></li>
+                    </div>
+                </ul>
+            </li>
+            <li id="link6"  class="parent" >
+                <span>Projects</span>
+                <ul>
+                    <div class="subContainer">
+                        <li  id="sublink6"><a href="past.html"><span>Projects</span></a></li>
+                        <li  id="sublink7"><a href="past.html"><span>Past</span></a></li>
+                        <li  id="sublink8"><a href="present.html"><span>Present</span></a></li>
+                    </div>
+                </ul>
+            </li>
+            <li id="link9" >
+                <a
+                        href="tenders.html"><span>Tenders</span></a>
+            </li>
+            <li id="link10" >
+                <a
+                        href="partners.html"><span>Partners</span></a>
+            </li>
+            <li id="link1">
+                <a  href="contact.html"><span>Contact</span></a>
+            </li>
+        </nav>
+        <!----  END MENU FOR MOBILE WEBSITE ------></section>
+    <section
+            id="subBanner" ><div class="container">
+    </div>
+    </section>
+</div>
+<div class="siteBottom">
+    <div id="outerSidebar">
+        <div class="item">
+            <a class="overlayImg" rel="sidebar" href="/thumbnaillarge/_sidetext.gif">
+                <div class="contentImg image" style="background:url('thumbnailsmall/_sidetext.gif')"></div>
+            </a>
+            <div class="caption"></div>
+        </div>
+    </div>
+    <!--  START CONTENT AREA -->
+    <div class="contentWrap contentPagesWrap">
+
+        <section class="textSection" id="section1">
+
+            <div class="container">
+                <div class="sidebar">
+
+                    <div class="item">
+                        <a class="overlayImg" rel="sidebar" href="/thumbnaillarge/_sidetext.gif">
+                            <div class="contentImg image" style="background:url('thumbnailsmall/_sidetext.gif')"></div>
+                        </a>
+                        <div class="caption"></div>
+                    </div>
+                </div>
+                <div class="siteContent">
+                    <div class="contentCopy">
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <h1 style="text-align: center;"><strong>We would like to thank you for your enquiry,</strong></h1>
+                        <h1 style="text-align: center;"><strong>We will get back to you as soon as possible.</strong></h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- START SHOPPING ITEMS -->
+        <!-- END SHOPPING ITEMS -->
+
+
+
+
+
+    </div>
+    <!--  END CONTENT AREA -->
+</div>
+<!----  FOOTER ------>
+<footer>
+    <div id="footerBottom">
+        <div class="container">
+            <nav>
+                <li><a id="link0b" href="/">Home</a></li>
+                <li><a id="link2b" href="about_us.html">About Us</a></li>
+                <li><a id="link3b" href="services.html">Services</a></li>
+                <li><a id="link6b" href="past.html">Projects</a></li>
+                <li><a id="link9b" href="tenders.html">Tenders</a></li>
+                <li><a id="link10b" href="partners.html">Partners</a></li>
+                <li><a id="link1b" href="contact.html">Contact</a></li>
+            </nav>
+            <div class="footerRight">
+                <div class="copyright">&copy; Copyright Transform Electrics&nbsp;2015</div>
+                <div class="havealook"><a href="http://www.havealook.com.au" target="_blank">Website Design</a> by Havealook</div>
+            </div></div>
+    </div>
+</footer>
+<!----  END FOOTER ------>
+
+<link rel="stylesheet" id="mediumCSS" media="(min-width:701px) and (max-width:950px)" type="text/css" href="http://www.transformelectrics.com.au/medium.css">
+<link rel="stylesheet" id="smallCSS" media="(max-width:700px)" type="text/css" href="http://www.transformelectrics.com.au/small.css">
+<style>
+
+    @font-face {
+        font-family: 'FontAwesome';
+        src: url('http://www.transformelectrics.com.au/fontawesome-webfont.eot');
+        src: url('http://www.transformelectrics.com.au/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), url('http://www.transformelectrics.com.au/fontawesome-webfont.woff') format('woff'), url('http://www.transformelectrics.com.au/fontawesome-webfont.ttf') format('truetype'), url('http://www.transformelectrics.com.au/fontawesome-webfont.svg#fontawesomeregular') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+
+</style>
+
+
+
+</html>
+
+

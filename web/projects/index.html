@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Хаус Электрик</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1;">
+    <meta name="keywords" content="Хаус Электрик, electrical, electricity, electrical products "/>
+    <meta name="description" content="Хаус Электрик осуществляет поставку и установку широкого спектра электротехнической продукции."/>
+    <meta name="msapplication-TileImage" content="houses/house1">
+    <style>a,abbr,acronym,address,applet,b,big,blockquote,body,center,cite,code,dd,del,dfn,div,dl,dt,em,fieldset,font,form,h1,h2,h3,h4,h5,h6,html,i,iframe,ins,kbd,label,legend,object,p,pre,q,s,samp,small,span,strike,strong,sub,sup,tt,u,var{margin:0;padding:0;border:0;outline:0;background:0 0}img{margin:0;padding:0;outline:0}body{line-height:1}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}img{border:0}.clear{clear:both}.absolute{position:absolute}input,select,textarea{border-radius:0;border:1px solid #ccc;background:#fff;box-sizing:border-box}input,textarea{-webkit-appearance:none}</style>
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" id="smallCSS" media="(max-width:700px)" type="text/css" href="../css/small.css">
+    <link rel="icon" type="image/ico" href="../houses/house1.png">
+    <link rel="apple-touch-icon" href="../houses/house1.png">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,300,100' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="../js/jquery-1.11.3.js"></script>
+    <script defer  src="../js/site.min.js"></script>
+    <script src="../js/logohouse.js"></script>
+    <script defer src="../js/fancybox.min.js"></script>
+    <style>
+        @font-face {
+            font-family: 'FontAwesome';
+            src: url('../fonts/fontawesome-webfont.eot');
+            src: url('../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff') format('woff'), url('../fonts/fontawesome-webfont.ttf') format('truetype'), url('../fonts/fontawesome-webfont.svg#fontawesomeregular') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<!--Скрипт домика-->
+<script type="text/javascript">
+    $(document).ready(function(){
+        executeOutOfPackageChanging();
+    });
+</script>
+<!--///////////-->
+
+<script>
+    $(document).ready(function(){
+
+        $('.flicker-example').flicker({
+            auto_flick: true,
+            auto_flick_delay: 5,
+            theme: 'light',
+            // flick_animation: "transform-slide"
+            // flick_animation: "transition-slide"
+            // flick_animation: "jquery-slide"
+            flick_animation: "transition-fade"
+            // flick_animation: "jquery-fade"
+        });
+    });
+</script>
+
+
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        //DROP DOWN CODE
+        $('.enquire-trigger').click(function () {
+            $('#enquire-dropdown').slideToggle(500, function () {		// CHANGE 'slow' to 'fast' if you want it faster or use a number without ' ' 1000=1sec
+                // Animation complete.
+            });
+        });
+
+
+        //CALLBACK CODE
+        $('a.fancybox-media')
+                .attr('rel', 'media-gallery')
+                .fancybox({
+                    openEffect : 'fade',
+                    closeEffect : 'fade',
+                    prevEffect : 'none',
+                    nextEffect : 'none',
+                    arrows : false,
+                    helpers : {
+                        media : {},
+                        buttons : {}
+                    }
+                });
+    });
+
+
+    // JAVASCRIPT VALIDATION MUST NOT BE FORM2
+    function validate2() {
+
+        var errors = 0;
+
+        if(document.form3.a_Name.value.length < 1) {alert('Please Enter Name');errors++;}
+        if(document.form3.b_Phone.value.length < 1) {alert('Please Enter Email');errors++;}
+        if(document.form3.c_Email.value.length < 1) {alert('Please Enter Phone');errors++;}
+
+        if(errors == 0)
+            return true;
+        else return false;
+    }
+</script>
+
+
+
+
+<div id="enquire-dropdown">
+    <div class="container">
+        <a class="enquire-trigger closeBtn" href="#"> Х Закрыть</a>
+
+
+        <!----  ONLINE ENQUIRY ------>
+        <div class="mceNonEditable">
+            <form action="/havealook/servlet/Havealook" method="post" name="form3" onsubmit="return validate2()"><input type="hidden" name="screen" value="emailForm" /><input type="hidden" name="mailTo" value="info.houseelectric@mail.ru" /><input type="hidden" name="returnTo" value="/../thank_you.html" /><input type="hidden" name="showAll" value="false" />
+                <div id="enquiry">
+                    <div class="enqHeader">Вопрос онлайн</div>
+                    <div class="enqRow">
+                        <div class="enqLeft">Имя *</div>
+                        <div class="enqRight"><input type="text" name="a_Name" maxlength="250" /></div>
+                    </div>
+                    <div class="enqRow">
+                        <div class="enqLeft">Телефон *</div>
+                        <div class="enqRight"><input type="text" name="b_Phone" maxlength="250" /></div>
+                    </div>
+                    <div class="enqRow">
+                        <div class="enqLeft">Почта *</div>
+                        <div class="enqRight"><input type="text" name="c_Email" maxlength="250" /></div>
+                    </div>
+                    <div class="enqRow">
+                        <div class="enqLeft">Вопрос</div>
+                        <div class="enqRight"><textarea name="ZZ_Comments"></textarea>
+                            <div>* Обязательные поля</div>
+                        </div>
+                    </div>
+                    <div class="enqRow"><input class="button" type="submit" name="email" value="Отправить" /></div>
+                </div>
+                <!--    <input type="hidden" name="__ncforminfo" value="XwJvm64TBxI31WZQf2Nn8WTYND6DuN_mhM_oBH_8iQH-YYbPLp9ArjjVMJpWkHauyp62kKqv9gi4KeqHYzDUsRk8HTroaXTSUb7s3uvWPPwXiE3kb-VWFq2V71RMs1xUNuqkun0mVPjcAxUNz-VXdu-BJKSo6oFX8gm5hUNAtNAS56bClSkG77IUZZPuRiLS"/>
+                --></form>
+        </div>
+        <!---- END ONLINE ENQUIRY ------>
+        <div class="dropContact">
+            <h1>Связязь с нами</h1>
+
+
+            <!----  CONTACT DETAILS ------>
+            <p><strong>Телефон</strong></p>
+            <p>8(930) 069 40 49 </p>
+            <p> </p>
+            <p><strong>Почта</strong></p>
+            <p><a href="mailto:info.houseelectric@mail.ru" target="_blank">info.houseelectric@mail.ru</a></p>
+            <p> </p>
+            <!--<p><strong>Fax</strong></p>
+            <p>03 9399 9358 </p>
+            <p> </p>
+            --><p><strong>Адрес</strong></p>
+            <p>улица Загородная</p>
+            <p>город Рязань</p>
+            <p>дом 22 корпус 4 </p>
+            <!----  CONTACT DETAILS ------>
+
+
+        </div>
+
+    </div>
+</div>
+<div id="absoDiv1" class="absolute"></div>
+<div id="absoDiv2" class="absolute"></div>
+<div id="absoDiv3" class="absolute"></div>
+<div class="siteTop">
+    <section id="banner">
+        <div class="container">
+            <a href="../"><div id="logo">
+                <table>
+                    <tr>
+                        <td><p class="logoTextHouse">Хаус</p></td>
+                        <td><img src="../houses/house1.png"  alt=""  id="image" style="margin-left: -55px"/></td>
+                        <td><p class="logoTextElectric">Электрик</p></td>
+                    </tr>
+                </table>
+            </div></a>
+
+            <div class="bannerRight">
+                <div class="contact">
+                    <p class="tagline">Свяжитесь с нами</p>
+                    <a href="tel: 8 930 069 40 49"><p class="phone"><img src="../img/phone.png" class="styleImgPhone" id="iconPhone" />8 930 069 40 49</p></a>
+                    <a href="mailto:info.houseelectric@mail.ru">info.houseelectric@mail.ru</a>
+                </div>
+                <div class="ultimate">
+                    <a class="enquiry enquire-trigger"></a>
+                    <a class="fancybox-media fancybox.iframe callback" href="../callback.jsp" rel="media-gallery"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="menu">
+        <!----  MENU FOR FULL WEBSITE ------>
+        <nav>
+            <li ><a   href="../"><span>Главная</span></a></li>
+            <li ><a href="../about_us"><span>О нас</span></a></li>
+            <li  class="parent"><a href="../services"><span>Сервис</span><span class="Chevron"></span></a>
+                <ul>
+                    <div class="subContainer">
+                        <!--<li  ><a href="construction.html"><span>Конструкции</span></a></li>-->
+                        <li ><a href="../services/maintenance.html"><span>Виды работ</span></a></li>
+                    </div>
+                </ul>
+            </li>
+            <li  class="parent"><a href="../projects" class="current"><span>Проекты</span><span class="Chevron"></span></a>
+                <ul>
+                    <div class="subContainer">
+                        <li ><a href="../projects"><span>Проектная документация</span></a></li>
+                        <!-- <li ><a href="present.html"><span>Настоящее</span></a></li>-->
+                    </div>
+                </ul>
+            </li>
+            <li ><a href="../tenders"><span>Тендеры</span></a></li>
+            <li ><a href="../partners"><span>Партнеры</span></a></li>
+            <li ><a href="../contacts"><span>Контакты</span></a></li>
+        </nav>
+        <!----  END MENU FOR FULL WEBSITE ------>
+    </section>
+    <section id="mobileMenu">
+        <!----  MENU FOR MOBILE WEBSITE ------>
+        <div id="navToggle"><p class="navicon"></p></div>
+        <nav>
+            <li id="link0"><a href="../forBor"><span>Главная</span></a></li>
+            <li id="link2" >
+                <a href="../about_us"><span>О Нас</span></a>
+            </li>
+            <li id="link3"  class="parent" >
+                <span>Сервис</span>
+                <ul>
+                    <div class="subContainer">
+                        <li  id="sublink3"><a href="../services"><span>Сервис</span></a></li>
+                        <!--<li  id="sublink4"><a href="construction.html"><span>Конструкции</span></a></li>-->
+                        <li  id="sublink5"><a href="../services/maintenance.html"><span>Виды работ</span></a></li>
+                    </div>
+                </ul>
+            </li>
+            <li id="link6"  class="parent" >
+                <span>Проекты</span>
+                <ul>
+                    <div class="subContainer">
+                        <li  id="sublink6"><a href="../projects"><span>Проекты</span></a></li>
+                        <li  id="sublink7"><a href="../projects"><span>Проектная доументация</span></a></li>
+                        <!--<li  id="sublink8"><a href="present.html"><span>Настоящее</span></a></li>-->
+                    </div>
+                </ul>
+            </li>
+            <li id="link9" >
+                <a href="../tenders"><span>Тендеры</span></a>
+            </li>
+            <li id="link10" >
+                <a href="../partners"><span>Партнеры</span></a>
+            </li>
+            <li id="link1">
+                <a  href="../contacts"><span>Контакты</span></a>
+            </li>
+        </nav>
+        <!----  END MENU FOR MOBILE WEBSITE ------></section>
+    <section id="subBanner" >
+        <div class="container">
+        </div>
+    </section>
+</div>
+<div class="siteBottom">
+    <!--<div id="outerSidebar">
+        <div class="item">
+            <a class="overlayImg" rel="sidebar" href="/thumbnaillarge/_sidetext.gif">
+                <div class="contentImg image" style="background:url('thumbnailsmall/_sidetext.gif')"></div>
+            </a>
+            <div class="caption"></div>
+        </div>
+    </div>-->
+    <!--  START CONTENT AREA -->
+    <div class="contentWrap contentPagesWrap">
+
+        <section class="textSection">
+
+            <div class="container">
+               <!-- <div class="sidebar">
+
+                    <div class="item">
+                        <a class="overlayImg" rel="sidebar" href="/thumbnaillarge/_sidetext.gif">
+                            <div class="contentImg image" style="background:url('thumbnailsmall/_sidetext.gif')"></div>
+                        </a>
+                        <div class="caption"></div>
+                    </div>
+                </div>-->
+                <div class="siteContent">
+                    <div class="contentCopy">
+                        <h1>Проектная документация</h1>
+                        <p>&nbsp;</p>
+                        <hr />
+                        <p>&nbsp;</p>
+                        <p style="font: 16pt Calibri; color: white">Пример проекта внутреннего электроснабжения холодильного терминала для заморозки мяса</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="imageSection" >
+            <div class="container">
+                <div class="sidebar"></div>
+                <div class="siteContent">
+                    <div class="contentImgRow">
+                        <div class="item">
+                            <a class="overlayImg" rel="gallery" href="images/eom/1.png">
+                                <div class="contentImg image" style="background:url('images/eom/1.png')"></div>
+                            </a>
+                            <div class="caption"></div>
+                        </div><div class="item">
+                        <a class="overlayImg" rel="gallery" href="images/eom/2.png">
+                            <div class="contentImg image" style="background:url('images/eom/2.png')"></div>
+                        </a>
+                        <div class="caption"></div>
+                    </div><div class="item">
+                        <a class="overlayImg" rel="gallery" href="images/eom/3.png">
+                            <div class="contentImg image" style="background:url('images/eom/3.png')"></div>
+                        </a>
+                        <div class="caption"></div>
+                    </div>
+                        <div class="item">
+                        <a class="overlayImg" rel="gallery" href="images/eom/4.png">
+                            <div class="contentImg image" style="background:url('images/eom/4.png')"></div>
+                        </a>
+                        <div class="caption"></div>
+                    </div>
+                        <div class="item">
+                            <a class="overlayImg" rel="gallery" href="images/eom/5.png">
+                                <div class="contentImg image" style="background:url('images/eom/5.png')"></div>
+                            </a>
+                            <div class="caption"></div>
+                        </div>
+                        <div class="item">
+                            <a class="overlayImg" rel="gallery" href="images/eom/6.png">
+                                <div class="contentImg image" style="background:url('images/eom/6.png')"></div>
+                            </a>
+                            <div class="caption"></div>
+                        </div>
+                        <div class="item">
+                            <a class="overlayImg" rel="gallery" href="images/eom/7.png">
+                                <div class="contentImg image" style="background:url('images/eom/7.png')"></div>
+                            </a>
+                            <div class="caption"></div>
+                        </div>
+                        <div class="item">
+                            <a class="overlayImg" rel="gallery" href="images/eom/8.png">
+                                <div class="contentImg image" style="background:url('images/eom/8.png')"></div>
+                            </a>
+                            <div class="caption"></div>
+                        </div>
+                        <div class="item">
+                            <a class="overlayImg" rel="gallery" href="images/eom/9.png">
+                                <div class="contentImg image" style="background:url('images/eom/9.png')"></div>
+                            </a>
+                            <div class="caption"></div>
+                        </div>
+                        <div class="item">
+                            <a class="overlayImg" rel="gallery" href="images/eom/10.png">
+                                <div class="contentImg image" style="background:url('images/eom/10.png')"></div>
+                            </a>
+                            <div class="caption"></div>
+                        </div>
+                        <div class="item">
+                            <a class="overlayImg" rel="gallery" href="images/eom/11.png">
+                                <div class="contentImg image" style="background:url('images/eom/11.png')"></div>
+                            </a>
+                            <div class="caption"></div>
+                        </div>
+                        <div class="item">
+                            <a class="overlayImg" rel="gallery" href="images/eom/12.png">
+                                <div class="contentImg image" style="background:url('images/eom/12.png')"></div>
+                            </a>
+                            <div class="caption"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="textSection">
+
+        <div class="container">
+            <div class="sidebar">
+
+            </div>
+            <div class="siteContent">
+                <div class="contentCopy">
+                    <hr />
+                    <p>&nbsp;</p>
+                    <p style="font: 16pt Calibri; color: white">Пример проекта внутреннего электроснабжения под магазин (эскизный проект)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+        <section class="imageSection">
+            <div class="container">
+                <div class="sidebar"></div>
+                <div class="siteContent">
+                    <div class="contentImgRow">
+                        <div class="item">
+                            <a class="overlayImg" rel="gallery" href="images/unliving_place/1.png">
+                                <div class="contentImg image" style="background:url('images/unliving_place/1.png')"></div>
+                            </a>
+                            <div class="caption"></div>
+                        </div><div class="item">
+                        <a class="overlayImg" rel="gallery" href="images/unliving_place/2.png">
+                            <div class="contentImg image" style="background:url('images/unliving_place/2.png')"></div>
+                        </a>
+                        <div class="caption"></div>
+                    </div>
+                    <div class="item">
+                        <a class="overlayImg" rel="gallery" href="images/unliving_place/3.png">
+                            <div class="contentImg image" style="background:url('images/unliving_place/3.png')"></div>
+                        </a>
+                        <div class="caption"></div>
+                    </div>
+                        <div class="item">
+                            <a class="overlayImg" rel="gallery" href="images/unliving_place/3.png">
+                                <div class="contentImg image" style="background:url('images/unliving_place/5.png')"></div>
+                            </a>
+                            <div class="caption"></div>
+                        </div>
+                        <div class="item">
+                            <a class="overlayImg" rel="gallery" href="images/unliving_place/3.png">
+                                <div class="contentImg image" style="background:url('images/unliving_place/6.png')"></div>
+                            </a>
+                            <div class="caption"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="textSection">
+
+        <div class="container">
+            <div class="sidebar">
+
+            </div>
+            <div class="siteContent">
+                <div class="contentCopy">
+                    <hr />
+                    <p>&nbsp;</p>
+                    <p style="font: 16pt Calibri; color: white">Пример проекта по релейной защите</p></div>
+            </div>
+        </div>
+    </section>
+        <section class="imageSection" id="section3">
+            <div class="container">
+                <div class="sidebar"></div>
+                <div class="siteContent">
+                    <div class="contentImgRow">
+                        <div class="item">
+                            <a class="overlayImg" rel="gallery" href="images/rizu/1.png">
+                                <div class="contentImg image" style="background:url('images/rizu/1.png')"></div>
+                            </a>
+                            <div class="caption"></div>
+                        </div><div class="item">
+                        <a class="overlayImg" rel="gallery" href="images/rizu/2.png">
+                            <div class="contentImg image" style="background:url('images/rizu/2.png')"></div>
+                        </a>
+                        <div class="caption"></div>
+                    </div><div class="item">
+                        <a class="overlayImg" rel="gallery" href="images/rizu/3.png">
+                            <div class="contentImg image" style="background:url('images/rizu/3.png')"></div>
+                        </a>
+                        <div class="caption"></div>
+                    </div>
+                    <div class="item">
+                        <a class="overlayImg" rel="gallery" href="images/rizu/4.png">
+                            <div class="contentImg image" style="background:url('images/rizu/4.png')"></div>
+                        </a>
+                        <div class="caption"></div>
+                    </div>
+                        <div class="item">
+                            <a class="overlayImg" rel="gallery" href="images/rizu/6.png">
+                                <div class="contentImg image" style="background:url('images/rizu/6.png')"></div>
+                            </a>
+                            <div class="caption"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="textSection">
+
+        <div class="container">
+            <div class="sidebar">
+
+            </div>
+            <div class="siteContent">
+                <div class="contentCopy">
+                    <hr />
+                    <p>&nbsp;</p>
+                    <p style="font: 16pt Calibri; color: white">Пример проекта комплектной трансформаторной подстанции наружной установки 10/0,4 кВ с двумя трансформаторами 1000 кВА (схемы, планировка, вторичка, опросный лист).</p></div>
+            </div>
+        </div>
+    </section>
+        <section class="imageSection" >
+            <div class="container">
+                <div class="sidebar"></div>
+                <div class="siteContent">
+                    <div class="contentImgRow">
+                        <div class="item">
+                            <a class="overlayImg" rel="gallery" href="images/ktpnu/1.png">
+                                <div class="contentImg image" style="background:url('images/ktpnu/1.png')"></div>
+                            </a>
+                            <div class="caption"></div>
+                        </div><div class="item">
+                        <a class="overlayImg" rel="gallery" href="images/ktpnu/2.png">
+                            <div class="contentImg image" style="background:url('images/ktpnu/2.png')"></div>
+                        </a>
+                        <div class="caption"></div>
+                    </div>
+                    <div class="item">
+                        <a class="overlayImg" rel="gallery" href="images/ktpnu/3.png">
+                            <div class="contentImg image" style="background:url('images/ktpnu/3.png')"></div>
+                        </a>
+                        <div class="caption"></div>
+                    </div>
+                        <div class="item">
+                            <a class="overlayImg" rel="gallery" href="images/ktpnu/4.png">
+                                <div class="contentImg image" style="background:url('images/ktpnu/4.png')"></div>
+                            </a>
+                            <div class="caption"></div>
+                        </div>
+                        <div class="item">
+                            <a class="overlayImg" rel="gallery" href="images/ktpnu/5.png">
+                                <div class="contentImg image" style="background:url('images/ktpnu/5.png')"></div>
+                            </a>
+                            <div class="caption"></div>
+                        </div>
+                        <div class="item">
+                            <a class="overlayImg" rel="gallery" href="images/ktpnu/6.png">
+                                <div class="contentImg image" style="background:url('images/ktpnu/6.png')"></div>
+                            </a>
+                            <div class="caption"></div>
+                        </div>
+                        <div class="item">
+                            <a class="overlayImg" rel="gallery" href="images/ktpnu/7.png">
+                                <div class="contentImg image" style="background:url('images/ktpnu/7.png')"></div>
+                            </a>
+                            <div class="caption"></div>
+                        </div>
+                        <div class="item">
+                            <a class="overlayImg" rel="gallery" href="images/ktpnu/8.png">
+                                <div class="contentImg image" style="background:url('images/ktpnu/8.png')"></div>
+                            </a>
+                            <div class="caption"></div>
+                        </div>
+                        <div class="item">
+                            <a class="overlayImg" rel="gallery" href="images/ktpnu/9.png">
+                                <div class="contentImg image" style="background:url('images/ktpnu/9.png')"></div>
+                            </a>
+                            <div class="caption"></div>
+                        </div>
+                        <div class="item">
+                            <a class="overlayImg" rel="gallery" href="images/ktpnu/10.png">
+                                <div class="contentImg image" style="background:url('images/ktpnu/10.png')"></div>
+                            </a>
+                            <div class="caption"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- START SHOPPING ITEMS -->
+        <!-- END SHOPPING ITEMS -->
+
+
+
+
+
+    </div>
+    <!--  END CONTENT AREA -->
+</div>
+<!----  FOOTER ------>
+<footer>
+    <div id="footerBottom">
+        <div class="container">
+            <nav>
+                <li><a id="link0b" href="../">Главная</a></li>
+                <li><a id="link2b" href="../about_us">О Нас</a></li>
+                <li><a id="link3b" href="../services">Сервис</a></li>
+                <li><a id="link6b" href="../projects">Проекты</a></li>
+                <!--<li><a id="link9b" href="tenders.html">Tenders</a></li>-->
+                <li><a id="link10b" href="../partners">Партнеры</a></li>
+                <li><a id="link1b" href="../contacts">Контакты</a></li>
+            </nav>
+            <div class="footerRight">
+                <div class="copyright">&copy; Права принадлежат Хаус Электрик&nbsp;2015</div>
+                <div class="havealook"><a href="http://www.havealook.com.au" target="_blank">Дизайн Вебсайта </a> от pashebor's laba</div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!----  END FOOTER ------>
+
+
+</body>
+</html>
